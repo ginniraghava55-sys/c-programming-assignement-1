@@ -1,21 +1,23 @@
-#include<stdio.h>
-int main( )
-{
-    double dist,fare =100;
-    char member;
-    printf("enter dist in Km: ");
-    scanf("%lf",&dist);
-    printf("Are you a member?(Y/n):");
-    scanf(" %c",&member);
-    fare=100;
-    if(dist>10)
-    {
-        fare=fare+(dist-10)*20;
-    }
-    if(member=='Y'||member=='y')
-    {
-        fare=fare*0.90;
-    }
-    printf("total fare=Rs. %2f\n" ,fare);
+
+#include <stdio.h>
+
+int main() {
+    float distance, fare = 100;
+    int member;
+
+    printf("Enter distance: ");
+    scanf("%f", &distance);
+
+    printf("Member (1 for Yes, 0 for No): ");
+    scanf("%d", &member);
+
+    if (distance > 10)
+        fare += (distance - 10) * 20;
+
+    if (member == 1)
+        fare = fare - (fare * 0.10);
+
+    printf("Final Fare: Rs.%.2f\n", fare);
+
     return 0;
 }
