@@ -1,7 +1,7 @@
 C-programming assignment 1
 
-name : G.Raghava
+Name : G.Raghava
 
-reg.no :1925260329
+Reg.no :1925260329
 
 slot D
